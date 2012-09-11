@@ -19,8 +19,8 @@ finally() {
     move "cud1"
 
     # stop audio
+    killall afplay
 
-    echo "Done..."
     exit 0
 }
 
@@ -28,9 +28,14 @@ finally() {
 IFS='%'
 
 # start audio
+afplay $AUDIO_FILE&
 
 # hide the cursor
 tput civis
+
+printf $sky_
+move "cuu1"
+sleep $START_WAIT_TIME
 
 # main loop
 while [ 1 ]; do
