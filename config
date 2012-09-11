@@ -3,20 +3,20 @@
 . `pwd`/colors.sh
 
 sky_="
-+      o     +              o    
-     +             o     +       +
- o          +                     
-     o  +           +        +    
- +        o     o       +        o
-      o       +      o        o    
-  +       +             o         
-        o       o    +     +     +
-    +      +            o
- +      o         o   +       o   
-     +         +                  
- o        o         o      o     +
-     o           +                
- +      +     o        o      +   
+$_sky+      o     +              o     $_end
+$_sky     +             o     +       +$_end
+$_sky o          +                     $_end
+$_sky     o  +           +        +    $_end
+$_sky +        o     o       +        o$_end
+$_sky      o       +      o        o   $_end
+$_sky  +       +             o         $_end
+$_sky        o       o    +     +     +$_end
+$_sky    +      +            o         $_end
+$_sky +      o         o   +       o   $_end
+$_sky     +         +                  $_end
+$_sky o        o         o      o     +$_end
+$_sky     o           +                $_end
+$_sky +      +     o        o      +   $_end
 "
 
 cat1="
