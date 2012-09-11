@@ -1,0 +1,57 @@
+#!/bin/bash
+
+. `pwd`/colors.sh
+
+sky_="
++      o     +              o    
+     +             o     +       +
+ o          +                     
+     o  +           +        +    
+ +        o     o       +        o
+      o       +      o        o    
+  +       +             o         
+        o       o    +     +     +
+    +      +            o
+ +      o         o   +       o   
+     +         +                  
+ o        o         o      o     +
+     o           +                
+ +      +     o        o      +   
+"
+
+cat1="
+$_sky +      o     +              o    $_end
+$_sky     +             o     +       +$_end
+$_sky o          +                     $_end
+$_sky     o  +           +        +    $_end
+$_sky +        o     o       +        o$_end
+$_sky ${_red}-_-_-_-_-_-_-_${_sky},------,      o    $_end
+$_sky ${_grn}_-_-_-_-_-_-_-${_sky}|   /\_/\          $_end
+$_sky ${_ylw}-_-_-_-_-_-_-${_sky}~|__( ^ .^)  +     +$_end
+$_sky ${_pur}_-_-_-_-_-_-_-${_sky}\"\"  \"\"             $_end
+$_sky +      o         o   +       o   $_end
+$_sky     +         +                  $_end
+$_sky o        o         o      o     +$_end
+$_sky     o           +                $_end
+$_sky +      +     o        o      +   $_end
+"
+
+cat2="
+$_sky     o  +           +        +    $_end
+$_sky o          +                    o$_end
+$_sky     o                 +          $_end
+$_sky +      o     +              o    $_end
+$_sky  o     +        o               +$_end
+$_sky ${_red}_-_-_-_-_-_-_-${_sky},------,  o      + $_end
+$_sky ${_grn}-_-_-_-_-_-_-_${_sky}|   /\_/\    +     $_end
+$_sky ${_ylw}_-_-_-_-_-_-_${_sky}~|__( ^ .^)     o   $_end
+$_sky ${_pur}-_-_-_-_-_-_-_ ${_sky} \"\"  \"\"           $_end
+$_sky +      +     o        o      +   $_end
+$_sky o        +                o     +$_end
+$_sky +      o         +     +       o $_end
+$_sky     +         +                  $_end
+$_sky        +           o        +    $_end
+"
+SLEEP_TIME=0.20
+AUDIO_FILE="nyan.mp3"
+LINES=$(( $(echo "$cat1" | wc -l) - 1 ))
