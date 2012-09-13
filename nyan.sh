@@ -1,7 +1,9 @@
 #!/bin/bash
 
+BASEDIR=$(dirname $0)
+
 # config
-. `pwd`/config
+. $BASEDIR/config
 
 move() {
     for((x=0; x < $LINES; x++));

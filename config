@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. `pwd`/colors.sh
+. $BASEDIR/colors.sh
 
 sky_="
 $_sky+      o     +              o     $_end
@@ -54,5 +54,5 @@ $_sky        +           o        +    $_end
 "
 SLEEP_TIME=0.20
 START_WAIT_TIME="3.9"
-AUDIO_FILE="nyan.mp3"
+AUDIO_FILE="$BASEDIR/nyan.mp3"
 LINES=$(( $(echo "$cat1" | wc -l) - 1 ))
