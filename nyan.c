@@ -10,7 +10,15 @@ int my_mvaddstr(int y, int x, char *str)
     for ( ; x < 0; ++x, ++str)
 	if (*str == '\0')  return ERR;
     for ( ; *str != '\0'; ++str, ++x)
-	if (mvaddch(y, x, *str) == ERR)  return ERR;
+        if(has_colors() == TRUE) {
+            start_color();
+            init_pair(1, COLOR_RED, COLOR_BLACK);
+            attron(COLOR_PAIR(1));
+            if (mvaddch(y, x, *str) == ERR)  return ERR;
+	    attroff(COLOR_PAIR(4));
+        } else {
+	    if (mvaddch(y, x, *str) == ERR)  return ERR;
+	}
     return OK;
 }
 
