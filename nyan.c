@@ -2,6 +2,7 @@
 #include <ncurses.h>
 #include <signal.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include "nyan.h"
 
 int my_mvaddstr(int y, int x, char *str)
@@ -15,6 +16,7 @@ int my_mvaddstr(int y, int x, char *str)
 
 int main(int argc, char *argv[])
 {
+    system("afplay nyan.mp3 &");
     int x;
     initscr();
     curs_set(0);
@@ -23,6 +25,7 @@ int main(int argc, char *argv[])
     leaveok(stdscr, TRUE);
     scrollok(stdscr, FALSE);
 
+    usleep(4000000);
     for (x = 0; x <= COLS; ++x) {
 	if (add_cat(x) == ERR) break;
 	refresh();
@@ -31,6 +34,7 @@ int main(int argc, char *argv[])
 
     mvcur(0, COLS - 1, LINES - 1, 0);
     endwin();
+    system("killall afplay");
 }
 
 int add_cat(int x) 
