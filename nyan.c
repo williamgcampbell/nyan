@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     scrollok(stdscr, FALSE);
 
     usleep(4000000);
-    for (x = 0; x <= COLS; ++x) {
+    for (x = - CATLENGTH ; x <= COLS; ++x) {
 	if (add_cat(x) == ERR) break;
 	refresh();
 	usleep(60000);
