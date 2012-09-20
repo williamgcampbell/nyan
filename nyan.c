@@ -55,7 +55,8 @@ int add_cat(int x)
     if (x > COLS+CATLENGTH) return ERR;
     int y = LINES / 2;
 
-    for (int i = 0; i <= CATHEIGHT; ++i) {
+    int i;
+    for (i = 0; i <= CATHEIGHT; ++i) {
 	int pattern = (CATLENGTH + x) % CATPATTERNS;
 	my_mvaddstr(y + i, x, catr[pattern][i]);
     }
