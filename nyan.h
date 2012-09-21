@@ -3,14 +3,15 @@
 #define CATHEIGHT     4
 #define CATLENGTH    28
 
-#define CATR1C1  " -_-_-_-_-_-_-_,------, "
-#define CATR2C1  " _-_-_-_-_-_-_-|   /\\_/\\ "
-#define CATR3C1  " -_-_-_-_-_-_-~|__( ^ .^) "
-#define CATR4C1  " _-_-_-_-_-_-_-\"\"  \"\" "
+#define CAT1  "  ,------, "
+#define CAT2  "  |   /\\_/\\ "
+#define CAT3  " ~|__( ^ .^) "
 
-#define CATR1C2  " _-_-_-_-_-_-_-,------, "
-#define CATR2C2  " -_-_-_-_-_-_-_|   /\\_/\\ "
-#define CATR3C2  " _-_-_-_-_-_-_~|__( ^ .^) "
-#define CATR4C2  " -_-_-_-_-_-_-_  \"\"  \"\" "
+#define FEET1  " \"\"  \"\" "
+#define FEET2  "   \"\"  \"\" "
 
-#define CATDEL   "                            "
+#define RAINBOWPATTERNS  2
+#define RAINBOWLENGTH    14
+
+#define RAINBOW1  " -_-_-_-_-_-_-_ "
+#define RAINBOW2  " _-_-_-_-_-_-_- "
