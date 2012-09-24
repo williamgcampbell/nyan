@@ -1,7 +1,9 @@
 CC=cc
-CFLAGS=-O
+CFLAGS=-O0 -g
 
 nyan: nyan.c nyan.h
 	$(CC) $(CFLAGS) -o nyan nyan.c -lcurses -ltermcap
-#	$(CC) $(CFLAGS) -o nyan nyan.c -lcurses
+
+clean:
+	rm -f nyan
 
